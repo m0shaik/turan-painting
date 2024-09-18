@@ -280,7 +280,7 @@ footer{
 
 
 
-	margin-top: var(--space-xl);
+	margin-top: var(--space-l);
 	background-image: url(../Images/cover/contact-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -296,16 +296,13 @@ footer{
 
 	.footer-links nav{
 
-		h3{
-			margin-bottom:var(--space-xl) ;
-		}
 
 		a{
 			margin-left: var(--space-s);
 		}
 		display: grid;
 		gap: var(--space-xs);
-		margin-bottom: var(--space-l);
+		margin-bottom: var(--space-xl);
 	}
 
 	.copyright{
