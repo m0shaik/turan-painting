@@ -295,13 +295,22 @@ footer{
 	}
 
 	.footer-links nav{
+
+		h3{
+			margin-bottom:var(--space-xl) ;
+		}
+
+		a{
+			margin-left: var(--space-s);
+		}
 		display: grid;
-		gap: var(--space-m);
+		gap: var(--space-xs);
 		margin-bottom: var(--space-l);
 	}
 
 	.copyright{
 		p{
+			margin-top: var(--space-xl);
 			font-size: 14px;
 			text-align: center;
 		}
@@ -372,42 +381,7 @@ footer{
 
 	}
 
-	button {
-		max-width: 100px;
 
-		  background-color: var(--tertiary-color);
-		  border-radius: 4px;
-		  border-style: none;
-		  box-sizing: border-box;
-		  color: #fff;
-		  cursor: pointer;
-		  display: inline-block;
-		  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
-		  font-size: 16px;
-		  font-weight: 700;
-		  line-height: 1.5;
-		  margin: 0;
-		  max-width: none;
-		  min-height: 44px;
-		  min-width: 10px;
-		  outline: none;
-		  overflow: hidden;
-		  padding: 9px 20px 8px;
-		  position: relative;
-		  text-align: center;
-		  text-transform: none;
-		  user-select: none;
-		  -webkit-user-select: none;
-		  touch-action: manipulation;
-		  width: 100%;
-		}
-
-	button:hover,
-	button:focus {
-	  opacity: .75;
-	}
-
-	}
 
 	select {
   	padding: 1em 1em;
