@@ -1,90 +1,89 @@
+.form-section {
+  background-color: var(--tertiary-color);
+}
 
-   .form-section{
-   	background-color: var(--tertiary-color);
-   	
-   }
+.form-section .inner-column {
+  /*      width: 100%;*/
+  /*      max-width: 800px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*      align-items: center;*/
+  padding: 100px 50px;
 
+  @media (min-width: 800px) {
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .form-section .inner-column  {
-/*      width: 100%;*/
-/*      max-width: 800px;*/
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-/*      align-items: center;*/
-      padding: 100px 50px;
-      
-      
+  .form-info {
+    margin-bottom: 2rem;
+    /*        text-align: center;*/
+
+    @media (min-width: 800px) {
+      margin-bottom: 0;
+      margin-right: 2rem;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      width: 100%;
+      /*        max-width: 25ch;*/
+      margin: 0 auto;
+      /*        text-align: center;*/
+
       @media (min-width: 800px) {
-        flex-direction: row;
-        align-items: center;
-
+        text-align: left;
+        margin: 0;
       }
-      
-      .form-info {
-        margin-bottom: 2rem;
-/*        text-align: center;*/
-        
-        @media (min-width: 800px) {
-          margin-bottom: 0;
-          margin-right: 2rem;
-          text-align: left;
-        }
-        
-        h2 {
-        font-size: 1.5rem;
-        width: 100%;
-/*        max-width: 25ch;*/
-        margin: 0 auto;
-/*        text-align: center;*/
-        
-          @media (min-width: 800px) {
-            text-align: left;
-            margin: 0;
-          }
-        }
-        
-        p {
-          margin-top: 1rem;
-          font-size: 1rem;
-          width: 100%;
-          max-width: 24ch;
-        }
-      }
-      
     }
 
-    .form {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 24ch;
     }
-   
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-s);
+}
+
 /*    // I would use the BEM method here for declaring styles,
     // but for the sake of clarity, I decided not to.*
   
 /*    // Just some basic input field styling.*/
-    .form__input {
-      width: clamp(120px, 50vw, 420px);
-      height: 2.5rem;
-      padding: 0 1.25rem;
-      border: 1px solid $black;
-      border-radius: 2px;
-      margin-block: var(--space-s) ;
-      
-      transition: all 250ms;
-      @media (min-width: 800px) {
-        width: clamp(120px, 35vw, 420px);
-        margin: 0.625rem auto;
-      }
-      
-    }
+.form__input {
+  width: clamp(120px, 50vw, 420px);
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-block: var(--space-s);
+  transition: all 250ms;
 
-    .form__label {
-      font-size: 1rem;
-      color: $grey;
-      display: block;
-      
-    }
-    
+  @media (min-width: 800px) {
+    width: clamp(120px, 35vw, 420px);
+    margin: 0.625rem auto;
   }
+}
+
+.form__label {
+  font-size: 1rem;
+  display: block;
+}
+
+.form-field {
+  display: grid;
+}
+
+output .result {
+  background-color: var(--tertiary-color);
+  padding: var(--space-s);
+}

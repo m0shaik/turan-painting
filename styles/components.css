@@ -1,56 +1,47 @@
-
 /* buttons and icons and smaller reusable bits here */
 
-	button {
-		max-width: 150px;
+button {
+  max-width: 150px;
 
-		  background-color: var(--secondary-color);
-		  border-radius: 4px;
-		  border-style: none;
-		  color: var(--ink);
-		  cursor: pointer;
-		  padding: 9px 20px 8px;
-		  position: relative;
-		  width: 100%;
-		}
-
-	button:hover,
-	button:focus {
-	  opacity: .75;
-	}
-
-	}
-
-
-
-
-.glide__arrow{
-	background-color: var(--paper) !important;
-	color: var(--ink) !important;
-/*	border-color: var(--primary-color) !important;*/
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  border-style: none;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 9px 20px 8px;
+  position: relative;
+  width: 100%;
 }
 
+button:hover,
+button:focus {
+  opacity: 0.75;
+}
+
+.glide__arrow {
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+  /*	border-color: var(--primary-color) !important;*/
+}
 
 .tilted-box {
-	position: relative;
+  position: relative;
 }
 
 .tilted-box::before {
-	content:"";
-	position: absolute;
-	height: 105%;
-	width: 105%;
-	top:-5%;
-	left: -5%;
-	border: 2px solid var(--primary-color-light);
-	z-index: 5;
-	rotate: -5deg;
-
+  content: "";
+  position: absolute;
+  height: 105%;
+  width: 105%;
+  top: -5%;
+  left: -5%;
+  border: 2px solid var(--primary-color-light);
+  z-index: 5;
+  rotate: -5deg;
 }
 
 .tilted-box.yellow::before {
-	border: 2px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
 }
 
-
-@import 'forms.css';
+@import "forms.css";
