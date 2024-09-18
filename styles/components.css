@@ -1,0 +1,34 @@
+
+/* buttons and icons and smaller reusable bits here */
+
+
+.glide__arrow{
+	background-color: var(--paper) !important;
+	color: var(--ink) !important;
+/*	border-color: var(--primary-color) !important;*/
+}
+
+
+.tilted-box {
+	position: relative;
+}
+
+.tilted-box::before {
+	content:"";
+	position: absolute;
+	height: 105%;
+	width: 105%;
+	top:-5%;
+	left: -5%;
+	border: 2px solid var(--primary-color-light);
+	z-index: 5;
+	rotate: -5deg;
+
+}
+
+.tilted-box.yellow::before {
+	border: 2px solid var(--secondary-color);
+}
+
+
+@import 'forms.css';

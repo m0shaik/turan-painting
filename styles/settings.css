@@ -1,0 +1,29 @@
+/*@import 'developer-styles.css';*/
+
+html {
+	--black: #111111;
+	--white: #efefef;
+
+	--neutral-stuffs: gray;
+
+	--primary-color: hsla(6, 83%, 53%, 1.00);
+	--primary-color-light: hsla(2, 74%, 79%, 1.00) ;
+	--secondary-color: hsla(37, 86%, 81%, 1.00);
+	--tertiary-color: hsla(203, 93%, 83%, 1.00) ;
+
+
+	--space-s: 8px;
+	--space-m: 16px;
+	--space-l: 32px;
+	--space-xl: 40px;
+
+
+
+	--shadow: rgba(0,0,0,.8);
+
+	--corners: 10px; /* or whatevers */
+
+	--paper: hsla(53, 89%, 96%, 1.00); 
+	--ink: black;
+}
+

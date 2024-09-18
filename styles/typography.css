@@ -1,0 +1,84 @@
+/* Should we pull in @fonts here? */
+/* 
+	don't think you can... might have to be higher up (the top of) the food chain! 
+	but ideally... they'd be here...  $todo - look into this
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face{
+	font-family: Avenir;
+	src: url(../fonts/AvenirNextCondensed-Regular.otf);
+}
+
+@font-face{
+	font-family: AvenirDB;
+	src: url(../fonts/AvenirNextCondensed-DemiBold.otf);
+
+}
+
+@font-face{
+	font-family: AvenirUL;
+	src: url(../fonts/AvenirNextCondensed-UltraLight.otf);
+}
+
+
+body {
+	-webkit-font-smoothing: antialiased; 
+	/* because Brian said to -- $todo confirm */
+}
+
+mark{
+	color: red;
+	background: none;
+}
+
+
+
+
+.calm-voice, p, li, a, button{
+	font-family: Open Sans;
+	font-size: 1.2rem;
+	line-height: 1.8;
+}
+
+.notice-voice {
+	font-family: AvenirUL;
+	font-size: 24px;
+}
+
+.attention-voice {
+	font-family: Avenir;
+	font-size: 38px;
+}
+
+.loud-voice {
+	font-family: AvenirDB;
+	font-size: clamp(42px, 5vw, 60px);
+}
+
+:is(.calm-voice, p) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p) strong {
+	font-weight: 700;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+/* or smaller group of article-like styles such as a <text-content> custom element */
+p + p {
+	margin-top: 1em;
+}
+
+h2 + p {
+	margin-top: 20px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
